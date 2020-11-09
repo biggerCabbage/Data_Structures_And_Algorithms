@@ -26,19 +26,19 @@ public class TwoSum {
     }
 
     /*
-     * 1，数组 两数之和 利用hash计算 两数不能是自己必须是两个下标 然后 hashmap取得是最后的值 不是第一个
+     * 2，数组 两数之和 利用hash计算 两数不能是自己必须是两个下标 然后 hashmap取得是最后的值 不是第一个
      * */
     public static int[] twoSumHash(int[] nums, int target) {
         Map<Integer, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            hashMap.put(nums[i], i);
-        }
-        for (int i = 0; i < nums.length; i++) {
             if (hashMap.containsKey(target - nums[i])) {
-                return new int[]{i, hashMap.get(target - nums[i])};
+                return new int[]{hashMap.get(target - nums[i]), i};
             }
+            hashMap.put(nums[i], i);
         }
         return new int[0];
     }
+
+
 
 }
