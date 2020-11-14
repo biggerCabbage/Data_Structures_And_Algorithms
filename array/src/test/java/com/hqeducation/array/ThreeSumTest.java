@@ -1,5 +1,6 @@
-package com.hqeducation;
+package com.hqeducation.array;
 
+import com.hqeducation.array.ThreeSum;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

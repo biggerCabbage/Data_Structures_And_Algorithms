@@ -1,4 +1,4 @@
-package com.hqeducation;
+package com.hqeducation.array;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +7,9 @@ import java.util.Map;
  * @author dzz
  * @create 2020-11-08 18:28
  * @since jdk1.8.0_131
+ *
+ * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
+ * 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
  */
 public class TwoSum {
 
@@ -36,6 +39,14 @@ public class TwoSum {
             }
             hashMap.put(nums[i], i);
         }
+        return new int[0];
+    }
+
+    /*
+     * 2，数组 两数之和 利用左右双指针方法
+     * */
+    public static int[] twoSumLink(int[] nums, int target) {
+
         return new int[0];
     }
 

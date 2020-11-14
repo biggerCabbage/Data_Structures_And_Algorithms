@@ -1,7 +1,8 @@
-package com.hqeducation;
+package com.hqeducation.array;
 
 import static org.junit.Assert.assertTrue;
 
+import com.hqeducation.array.TwoSum;
 import org.junit.Test;
 
 
